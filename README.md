@@ -19,7 +19,8 @@ In order to execute API calls, you must first generate authorization token for M
 
 1. [base_url]/rest/V1/integration/admin/token -> POST -> params: JSON with {username: your_username, password: your_password}
 
-Created API \
+### Created API \
+
 KD_PROMOTION_GROUPS\
  1. [base_url]/rest/V1/kodano/getPromotionGroups -> GET -> no params -> list all promotion groups\
  2. [base_url]/rest/V1/kodano/addPromotionGroup -> POST -> params -> JSON {groupName: your_group_name}\
