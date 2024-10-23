@@ -21,14 +21,14 @@ In order to execute API calls, you must first generate authorization token for M
 
 Created API \
 KD_PROMOTION_GROUPS\
-2. [base_url]/rest/V1/kodano/getPromotionGroups -> GET -> no params -> list all promotion groups\
-3. [base_url]/rest/V1/kodano/addPromotionGroup -> POST -> params -> JSON {groupName: your_group_name}\
-4. [base_url]/rest/V1/kodano/removePromotionGroup -> DELETE -> params -> URL PARAM ?groupId=2 \
+ 1. [base_url]/rest/V1/kodano/getPromotionGroups -> GET -> no params -> list all promotion groups\
+ 2. [base_url]/rest/V1/kodano/addPromotionGroup -> POST -> params -> JSON {groupName: your_group_name}\
+ 3. [base_url]/rest/V1/kodano/removePromotionGroup -> DELETE -> params -> URL PARAM ?groupId=2 \
 
 KD_PROMOTIONS\
-2. [base_url]/rest/V1/kodano/getPromotions -> GET -> no params -> list all promotions with assosciated groups\
-3. [base_url]/rest/V1/kodano/addPromotion -> POST -> params -> JSON {promotionName: your_promotion_name}\
-4. [base_url]/rest/V1/kodano/removePromotion -> DELETE -> params -> URL PARAM ?promotionId=2 \
+ 1. [base_url]/rest/V1/kodano/getPromotions -> GET -> no params -> list all promotions with assosciated groups\
+ 2. [base_url]/rest/V1/kodano/addPromotion -> POST -> params -> JSON {promotionName: your_promotion_name}\
+ 3. [base_url]/rest/V1/kodano/removePromotion -> DELETE -> params -> URL PARAM ?promotionId=2 \
 
 KD_PROMOTIONS_PROMOTION_GROUP\
-[base_url]/rest/V1/kodano/getPromotions -> POST -> params -> JSON { "groupId": 5, "promotionId":5 }\
+ 1. [base_url]/rest/V1/kodano/getPromotions -> POST -> params -> JSON { "groupId": 5, "promotionId":5 }\
