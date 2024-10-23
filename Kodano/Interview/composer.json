@@ -1,0 +1,17 @@
+{
+    "name": "kodano/interview",
+    "description": "Kodano Interview module\"",
+    "require": {
+        "php": "~7.3.0||~7.4.0||~8.1.0"
+    },
+    "type": "magento2-module",
+    "license": [],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Kodano\\Interview\\": ""
+        }
+    }
+}

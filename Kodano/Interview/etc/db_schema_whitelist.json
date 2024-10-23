@@ -1,0 +1,25 @@
+{
+    "kd_promotion": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "created_at": true,
+            "updated_at": true
+        }
+    },
+    "kd_promotion_group": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "created_at": true,
+            "updated_at": true
+        }
+    },
+    "kd_promotions_promotion_group": {
+        "column": {
+            "entity_id": true,
+            "promotion_id": true,
+            "group_id": true
+        }
+    }
+}

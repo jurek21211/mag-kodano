@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/kodano/getPromotions/" method="GET">
+        <service class="Kodano\Interview\Api\PromotionServiceInterface" method="get"/>
+        <resources>
+            <resource ref="Kodano_Interview::promotions_get"/>
+        </resources>
+    </route>
+    <route url="/V1/kodano/addPromotion/" method="POST">
+        <service class="Kodano\Interview\Api\PromotionServiceInterface" method="add"/>
+        <resources>
+            <resource ref="Kodano_Interview::promotions_add"/>
+        </resources>
+    </route>
+    <route url="/V1/kodano/removePromotion/" method="DELETE">
+        <service class="Kodano\Interview\Api\PromotionServiceInterface" method="remove"/>
+        <resources>
+            <resource ref="Kodano_Interview::promotions_remove"/>
+        </resources>
+    </route>
+
+    <route url="/V1/kodano/getPromotionGroups/" method="GET">
+        <service class="Kodano\Interview\Api\PromotionGroupServiceInterface" method="get"/>
+        <resources>
+            <resource ref="Kodano_Interview::promotions_get"/>
+        </resources>
+    </route>
+    <route url="/V1/kodano/addPromotionGroup/" method="POST">
+        <service class="Kodano\Interview\Api\PromotionGroupServiceInterface" method="add"/>
+        <resources>
+            <resource ref="Kodano_Interview::promotions_add"/>
+        </resources>
+    </route>
+    <route url="/V1/kodano/removePromotionGroup/" method="DELETE">
+        <service class="Kodano\Interview\Api\PromotionGroupServiceInterface" method="remove"/>
+        <resources>
+            <resource ref="Kodano_Interview::promotions_remove"/>
+        </resources>
+    </route>
+    <route url="/V1/kodano/addPromotionToGroup/" method="POST">
+        <service class="Kodano\Interview\Api\PromotionGroupServiceInterface" method="addPromotionToGroup"/>
+        <resources>
+            <resource ref="Kodano_Interview::promotions_add"/>
+        </resources>
+    </route>
+</routes>

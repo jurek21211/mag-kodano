@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Kodano\Interview\Api\Data\PromotionGroupInterface" type="Kodano\Interview\Model\PromotionGroup"/>
+    <preference for="Kodano\Interview\Api\Data\PromotionGroupRelationInterface"
+                type="Kodano\Interview\Model\PromotionGroupRelation"/>
+    <preference for="Kodano\Interview\Api\Data\PromotionsInterface" type="Kodano\Interview\Model\Promotions"/>
+
+    <preference for="Kodano\Interview\Api\PromotionsRepositoryInterface"
+                type="Kodano\Interview\Model\PromotionsRepository"/>
+    <preference for="Kodano\Interview\Api\PromotionGroupRepositoryInterface"
+                type="Kodano\Interview\Model\PromotionGroupRepository"/>
+    <preference for="Kodano\Interview\Api\PromotionGroupRelationRepositoryInterface"
+                type="Kodano\Interview\Model\PromotionGroupRelationRepository"/>
+
+    <preference for="Kodano\Interview\Api\PromotionServiceInterface" type="Kodano\Interview\Service\PromotionService" />
+    <preference for="Kodano\Interview\Api\PromotionGroupServiceInterface" type="Kodano\Interview\Service\PromotionGroupService" />
+</config>
